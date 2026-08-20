@@ -1,6 +1,6 @@
 public class OrderService {
     public String query(String userId) {
-        // 故意写一个有 SQL 注入漏洞的代码，用来测试
-        return "SELECT * FROM orders WHERE user_id = " + userId;
+        String sql = "SELECT * FROM orders WHERE user_id = " + userId;
+        return sql;
     }
 }

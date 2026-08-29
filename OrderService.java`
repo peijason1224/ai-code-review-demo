@@ -12,7 +12,7 @@ public class OrderService {
         this.jdbcTemplate = jdbcTemplate;
     }
 //666
-//322
+9
     public String queryOrder(String userId) {
         String sql = "SELECT * FROM orders WHERE user_id = '" + userId + "'";
         return jdbcTemplate.queryForList(sql).toString();

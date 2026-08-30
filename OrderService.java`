@@ -13,8 +13,7 @@ public class OrderService {
     }
 999
 666
-999
-6666
+
 6666
     public String queryOrder(String userId) {
         String sql = "SELECT * FROM orders WHERE user_id = '" + userId + "'";

@@ -11,11 +11,6 @@ public class OrderService {
     public OrderService(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
-//666
-666
-999
-5555
-666
     public String queryOrder(String userId) {
         String sql = "SELECT * FROM orders WHERE user_id = '" + userId + "'";
         return jdbcTemplate.queryForList(sql).toString();
